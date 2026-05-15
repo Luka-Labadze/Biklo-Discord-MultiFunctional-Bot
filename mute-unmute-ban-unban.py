@@ -63,7 +63,7 @@ async def unban(ctx, *, member):
         await ctx.send("You don't have permission to use this command.")
         return
 
-    banned_users = await ctx.guild.bans()
+    banned_users = await ctx.guild.bans();
     member_name, member_discriminator = member.split("#")
 
     for ban_entry in banned_users:
